@@ -32,5 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.0"
 
   spec.add_dependency "factory_bot", ">= 5.0.2"
+  spec.add_dependency "ruby_parser"
   spec.add_dependency "ruby2ruby"
+  spec.add_dependency "method_source"
 end
