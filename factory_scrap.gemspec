@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Masatoshi Iwasaki"]
   spec.email = ["mstshiwasaki@gmail.com"]
 
-  spec.summary = %q{FactoryScrap is a tool to convert factory declarations of FactoryBot to Rails fixtures partially.}
+  spec.summary = %q{FactoryScrap is a tool to convert factory definitions of FactoryBot to Rails fixtures partially.}
   spec.description = ""
   spec.homepage = "https://github.com/masa-iwasaki/factory_scrap"
 

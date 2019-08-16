@@ -1,6 +1,6 @@
 # FactoryScrap
 
-FactoryScrap is a tool to convert factory declarations of FactoryBot to Rails fixtures partially.
+FactoryScrap is a tool to convert factory definitions of FactoryBot to Rails fixtures partially.
 
 ## Installation
 
