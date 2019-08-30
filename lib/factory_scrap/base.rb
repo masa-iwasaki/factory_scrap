@@ -19,8 +19,7 @@ module FactoryScrap
 
     private
 
-    def parse_declaration_block(attr)
-      blk = attr.instance_variable_get("@block")
+    def parse_declaration_block(blk)
       parser = RubyParser.new
       ruby2ruby = Ruby2Ruby.new
 
@@ -44,7 +43,9 @@ module FactoryScrap
         attrs = {}
 
         factory.definition.declarations.each do |attr|
-          key, statement = parse_declaration_block(attr)
+          blk = attr.instance_variable_get("@block")
+          next if blk.nil?
+          key, statement = parse_declaration_block(blk)
           attrs[key.to_s] = statement
         end
         @fixtures[factory.name] = Fixture.new(factory, attrs)
