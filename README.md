@@ -1,5 +1,8 @@
 # FactoryScrap
 
+[![Build Status](https://travis-ci.org/masa-iwasaki/factory_scrap.svg?branch=master)](https://travis-ci.org/masa-iwasaki/factory_scrap)
+[![codecov](https://codecov.io/gh/masa-iwasaki/factory_scrap/branch/master/graph/badge.svg)](https://codecov.io/gh/masa-iwasaki/factory_scrap)
+
 FactoryScrap is a tool to convert factory definitions of FactoryBot to Rails fixtures partially.
 
 ## Installation
