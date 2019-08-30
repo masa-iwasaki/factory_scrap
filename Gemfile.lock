@@ -3,7 +3,7 @@ PATH
   specs:
     factory_scrap (0.1.0)
       activesupport (~> 5.0)
-      factory_bot (>= 5.0.2)
+      factory_bot (>= 4.1.0)
       method_source
       ruby2ruby
       ruby_parser
