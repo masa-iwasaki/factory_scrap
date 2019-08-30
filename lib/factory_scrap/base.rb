@@ -50,6 +50,8 @@ module FactoryScrap
         end
         @fixtures[factory.name] = Fixture.new(factory, attrs)
       end
+
+      nil
     end
   end
 end
