@@ -7,3 +7,5 @@ rvm:
   - 2.5
   - 2.4
 before_install: gem install bundler -v 2.0.2
+after_success:
+  - codecov
