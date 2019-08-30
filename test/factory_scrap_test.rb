@@ -10,20 +10,12 @@ class FactoryScrapTest < Minitest::Test
     refute_nil ::FactoryScrap::VERSION
   end
 
-  def test_loading_factory_definitions
-    assert FactoryBot.configuration.factories.count.zero?
-
-    FactoryScrap.load_factories
-
-    assert_operator FactoryBot.configuration.factories.count, :>, 0
-  end
-
-  def test_exporting_factory_to_yaml
-    FactoryScrap.load_factories
-    FactoryScrap.convert_to_fixtures
-
-    assert_equal FactoryScrap.fixtures[:user].to_yaml,
-      load_file_fixture("users.yml").rstrip
+  def test_dumping_fixtures
+    Dir.mktmpdir do |tmpdir|
+      FactoryScrap.dump_fixtures tmpdir
+      dumped_yaml = File.read("#{tmpdir}/users.yml").rstrip
+      assert_equal dumped_yaml, load_file_fixture("users.yml")
+    end
   end
 
   private

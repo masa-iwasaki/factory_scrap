@@ -1,8 +1,9 @@
 require "yaml"
-
+require "active_support"
 require "factory_bot"
 require "ruby_parser"
 require "ruby2ruby"
+require "method_source"
 
 require "factory_scrap/version"
 require "factory_scrap/base"
@@ -16,10 +17,8 @@ module FactoryScrap
       @base ||= Base.new
     end
 
-    delegate :load_factories,
-      :convert_to_fixtures,
-      :reset,
-      :fixtures,
+    delegate :reset,
+      :dump_fixtures,
       to: :base
   end
 end
