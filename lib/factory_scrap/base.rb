@@ -30,7 +30,7 @@ module FactoryScrap
 
       [
         sexp[1][2],
-        "<%=" + ruby2ruby.process(sexp[3].deep_clone) + "%>",
+        "<%= " + ruby2ruby.process(sexp[3].deep_clone) + " %>",
       ]
     end
 
