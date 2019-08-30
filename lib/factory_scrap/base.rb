@@ -16,6 +16,8 @@ module FactoryScrap
         path = Pathname.new(dir).join(filename + ".yml")
         File.write(path, fixture.to_yaml)
       end
+
+      nil
     end
 
     private
@@ -51,8 +53,6 @@ module FactoryScrap
         end
         @fixtures[factory.name] = Fixture.new(factory, attrs)
       end
-
-      nil
     end
   end
 end
