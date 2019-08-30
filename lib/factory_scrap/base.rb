@@ -8,7 +8,8 @@ module FactoryScrap
     end
 
     def dump_fixtures(dir)
-      load_factories if @factories.nil?
+      reset
+      load_factories
       convert_to_fixtures
       @fixtures.each_pair do |klass_name_sym, fixture|
         filename = klass_name_sym.to_s.pluralize
