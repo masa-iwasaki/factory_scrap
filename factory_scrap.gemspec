@@ -9,10 +9,8 @@ Gem::Specification.new do |spec|
   spec.email = ["mstshiwasaki@gmail.com"]
 
   spec.summary = %q{FactoryScrap is a tool to convert factory definitions of FactoryBot to Rails fixtures partially.}
-  spec.description = ""
+  spec.description = %q{FactoryScrap is a tool to convert factory definitions of FactoryBot to Rails fixtures partially.}
   spec.homepage = "https://github.com/masa-iwasaki/factory_scrap"
-
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage

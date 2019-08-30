@@ -20,7 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You can convert all factory definitions to fixtures and export them under a directory by calling `FactoryScrap.dump_fixtures` method.
+
+```console
+$ RAILS_ENV=test rails c 
+> FactoryScrap.dump_fixtures "./tmp"
+```
 
 ## Development
 
