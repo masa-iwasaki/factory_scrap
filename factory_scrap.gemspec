@@ -33,5 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "ruby_parser"
   spec.add_dependency "ruby2ruby"
   spec.add_dependency "method_source"
-  spec.add_dependency "activesupport"
+  # for Ruby 2.4
+  spec.add_dependency "activesupport", "~> 5.0"
 end
